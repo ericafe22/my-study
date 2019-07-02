@@ -1,0 +1,9 @@
+
+■Visual Studioのデフォルトリポジトリの場所
+C:\Users\tsuzawa\source\repos
+
+■Visual Studioの設定もろもろ
+https://elleneast.com/?p=1849
+
+
+
