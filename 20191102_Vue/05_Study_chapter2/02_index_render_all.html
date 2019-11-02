@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My first Vue app</title>
+    <script src="http://localhost:8098"></script>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+    <h1>Vue.js</h1>
+    <div id="app">
+    {{ message }}
+    </div>
+
+    <hr>
+
+    <button onclick="doAction();">
+    click
+    </button>
+
+    <script>
+    var data = {
+        message:'Hello',
+        items:['one','two','three','four','five']
+    };
+
+    var app = new Vue({
+        el: '#app',
+        data: data,
+        render: (element) =>{
+                var p =element("p",
+                            {'style':'font-size:20pt; color:red'},
+                            data.message);
+                var li = data.items.map(item => element('li',item));
+                var ol = element("ol",li);
+                var div = element("div", [p, ol]);
+                return div;
+        }
+    })
+
+    function doAction(){
+        var newdata = ['いち','に','さん','よん','ご']
+        data.message = "clicked";
+        data.items[0] = '零';
+        for (n in data.items){
+            data.items[n] = newdata[n];
+        }
+    }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My first Vue app</title>
+    <script src="http://localhost:8098"></script>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+
+<body>
+
+        <h1>Vue.js</h1>
+        <div id="app">
+                <p v-bind:style="styles">
+                    {{message}}
+                </p>
+        </div>
+        <hr>
+    
+        <script>
+        var data = {
+            message: 'Hello Vue!',
+            styles: {fontSize:'20pt', color:'red',border:'2px solid cyan'}
+        };
+    
+        var app = new Vue({
+            el: '#app',
+            data: data
+        });
+    
+    h
+        </script>
+    </body>
+</html>

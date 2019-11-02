@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My first Vue app</title>
+    <script src="http://localhost:8098"></script>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+
+<body>
+        <style></style>
+
+        <h1></h1>
+
+        <div id = ""></div>
+
+        <script></script>
+</body>
+</html>
