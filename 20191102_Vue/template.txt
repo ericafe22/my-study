@@ -7,12 +7,15 @@
 </head>
 
 <body>
-        <style></style>
+        <style>
+        </style>
 
-        <h1></h1>
+        <h1>Vue.js</h1>
 
-        <div id = ""></div>
+        <div id = "app">
+        </div>
 
-        <script></script>
+        <script>
+        </script>
 </body>
 </html>

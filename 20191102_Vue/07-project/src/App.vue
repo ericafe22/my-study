@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <HelloWorld title="Hello"
-      message="これはサンプルプロジェクトです。"/>
+        message="これはサンプルプロジェクトです。"/>
   </div>
 </template>
 
