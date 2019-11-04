@@ -1,0 +1,122 @@
+
+■GET/POSTメソッド
+クライアントが投げた結果をサーバーが戻す
+
+GET
+　?のパラメーターで指定
+　サーバのデータを更新しないもの
+　型が1つのみ
+　受け取るのは何でもOK
+
+POST
+　URLで何を送ったか分かんない
+　サーバのデータで更新するもの
+　フォーム
+　データの型はなんでもよい
+　複雑なのは良い
+　データをJSONで送れる
+　受け取るのは何でもOK
+
+→POSTに統一するのがオススメ
+
+■WEBサーバ
+nginx
+　OSSで自分達で書いてる
+　他にもCDNなど(静的コンテンツ配信サービス)
+
+クラウド
+　裏方が何か分からない
+
+CDN
+　AWS Amplyfy
+　クラウドフロントvsクラウドフレア
+
+■中身を見てみる
+サーバに送ってるレスポンスのリスト
+Network
+　Headers
+　　General：向き先
+　　Method ：命令の種類
+
+WEB開いたときGETメソッドでサーバからファイルをダウンロード
+ダウンロードは並列
+
+前半：静的ファイル
+後半：
+
+　svgは画像
+　gifはアイコン
+
+　collect
+
+　stats
+　　Request Payload
+　　スターの数
+　　Response：空っぽ
+
+
+■WebSocket
+websocket
+　Messages
+
+ホットデプロイ
+　vueCLI
+
+npm run serve
+　WEBSocketで常に通信
+　npm run serve
+　　WEBサーバを1つ立ち上げてる
+
+　ブラウザ側がリクエストで常にWEBサーバと通信
+　vueCLIが更新を監視していてもってくる
+
+[課題]
+WEBサーバを立ててVueから通信する
+
+APIサーバを立てる
+　SpringBoot
+　Flask
+
+GET/POSTメソッドを打つパッケージを入れる
+　npm install axios --save
+　(npm install)
+
+crossorigin
+https://qiita.com/mitch0807/items/cd18e8fc15bb12416f3d
+　API
+　ホストが違うと動かない
+　localhost:5000 ⇔ localhost:8082
+　8080 → 5000に叩こうとしている
+
+　5000側はHTTPのヘッダーに許可を出す必要がある
+　ブラウザからpythonに叩こうとしている
+　chromeがvueから取得したホスト名がブラウザ
+　クロムが弾いてる
+
+　CORSどこが来てもいいよっていう許可を出してる
+
+mouted
+　ブラウザが画面を生成した直後に実行
+
+https://jp.vuejs.org/v2/guide/instance.html#%E3%83%A9%E3%82%A4%E3%83%95%E3%82%B5%E3%82%A4%E3%82%AF%E3%83%AB%E3%83%80%E3%82%A4%E3%82%A2%E3%82%B0%E3%83%A9%E3%83%A0
+
+
+ブラウザのレンダリングえんじん・・？
+　Chromiam(?)
+
+双方向で送受信している
+トリガーはブラウザのみ
+　ブラウザ以外でトリガー引くならwebsocket
+　SSE Blocking Query
+
+ブラウザからpythonにデータをくれ
+→その結果をpythonが返す
+
+1行目のデータをくれ
+→これはブラウザからpythonにデータを送ってる
+
+
+■ツール
+draw.io
+
+

@@ -1,0 +1,35 @@
+
+■環境構築
+・nodejs
+C:\Program Files\nodejs\
+
+・node_modules?
+C:\Users\rika\node_modules\.bin
+
+・devtool
+C:\Users\rika>vue-devtools
+
+■インストール
+npm install -g @vue/devtools
+npm install -g @vue/cli-service-global
+npm install -g @vue/cli
+
+vue create プロジェクト名
+
+vetur(VS Codeの拡張機能)
+draw.io
+
+■コマンド
+npm run serve
+npm run build
+vue ui
+
+■各種情報
+・ホームディレクトリ
+C:\Users\rika
+
+・プロジェクトフォルダ
+C:\Users\rika\Documents\github\my-study\20191102_Vue
+
+・dev-tools
+<script src="http://localhost:8098"></script>

@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1>{{title}}</h1>
+    <h1>{{test_title}}</h1>
     <p>{{message}}</p>
     <hr>
     <div>
@@ -11,6 +11,8 @@
 </template>
 
 <script>
+import Axios from 'axios'
+
 export default {
   name: 'HelloWorld',
   props: {
@@ -20,8 +22,14 @@ export default {
   data:function(){
     return{
       message: 'お名前は？',
-      input:'no name'
+      input:'no name',
+      test_title:'HELLO'
     };
+  },
+
+  mounted(){
+    const self = this
+    Axios.get('http://localhost:5000/getuser').then((res) => {self.test_title = res.data.message})
   },
 
   methods:{

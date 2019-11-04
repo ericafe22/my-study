@@ -18,7 +18,7 @@ export default {
 
   data: function(){
     return {
-      message:'HELLO',
+      message:'HELLO2',
       result:'no event'
     }
   },
